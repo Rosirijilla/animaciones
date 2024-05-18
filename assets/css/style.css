@@ -1,0 +1,145 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 15% auto;
+  grid-template-rows: 15% auto 15%;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.img-header {
+  width: 3rem;
+  height: 3rem;
+}
+
+aside {
+  grid-area: aside;
+  border-right: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  font-size: 2rem;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paginas a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.meteorito {
+  overflow: hidden;
+}
+
+.img-meteorito {
+  width: 10rem;
+  position: relative;
+  animation: desplazar 10s linear infinite;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(700%);
+  }
+}
+
+.centrales {
+  display: flex;
+  justify-content: center;
+}
+
+
+.sol {
+  width: 10rem;
+  height: 10rem;
+}
+
+@keyframes girarsol {
+ 
+}
+
+.luna {
+  width: 5rem;
+  height: 5rem;
+  animation: girarluna 5s linear infinite;
+}
+
+@keyframes girarluna {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.asteroide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-asteroide {
+  width: 2rem;
+  height: 2rem;
+  animation: escalar 5s ease-in-out infinite;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: blue;
+  color: white;
+}
