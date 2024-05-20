@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo</title>
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fin Link Font Awesome-->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/random-logo.png" type="image/x-icon">
@@ -20,7 +25,7 @@
         <aside>
             <h2>Categorías</h2>
             <div class="paginas">
-                <a href="">Galaxias</a>
+                <a href="#galaxias">Galaxias</a>
                 <a href="">Planetas</a>
                 <a href="">Lunas</a>
                 <a href="">Asteroides</a>
@@ -32,29 +37,231 @@
             </div>
         </aside>
 
-        <main>
+        <Section class="section">
             <div class="meteorito">
                 <img class="img-meteorito" src="./assets/img/meteorito.png" alt="">
             </div>
+        </Section>
 
-            <div class="centrales">
+        <main>
+            <h2 id="galaxias">Galaxias</h2>
+            </br>
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-vialactea.jpg" alt="Galaxia 1">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Vía Láctea</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 1,5×10<span class="superscript">12</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Horario.</li>
+                                <li><b>Diámetro:</b> 100-120 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000 a 2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 100-400 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/V%C3%ADa_L%C3%A1ctea"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
 
-                <img class="sol" src="./assets/img/sol.png" alt="">
-                <img src="./assets/img/jesus-bailando.gif" alt="">
-                <img class="luna" src="./assets/img/luna.png" alt="">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-andromeda.jpg" alt="Galaxia 2">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia de Andrómeda (M31)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 1,2×10<span class="superscript">12</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Horario.</li>
+                                <li><b>Diámetro:</b> 220 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000 a 2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 1 billón de Estrellas.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_de_Andr%C3%B3meda"><button>Leer
+                                    más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-girasol.jpg" alt="Galaxia 3">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia del Girasol (M63 o NGC 5055)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 1×10<span class="superscript">11</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Antihorario.</li>
+                                <li><b>Diámetro:</b> 97 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000-2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 400 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_del_Girasol"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-elmolinete.jpg" alt="Galaxia 4">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia del Molinete (M101 o NGC 5457)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 1×10<span class="superscript">12</span> M<span
+                                        class="superscript">sol</span></li>
+                                <li><b>Tipo Giro:</b> Antihorario.</li>
+                                <li><b>Diámetro:</b> 170 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.700-3.400 años luz.</li>
+                                <li><b>Número Estrellas:</b> 100 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_espiral_M101"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-sombrero.jpg" alt="Galaxia 5">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia del Sombrero (M104)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Galaxia espiral con un bulbo prominente.</li>
+                                <li><b>Masa:</b> 8×10<span class="superscript">11</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Antihorario.</li>
+                                <li><b>Diámetro:</b> 50 miles años luz.</li>
+                                <li><b>Grosor:</b> 2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 100 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_del_Sombrero"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-triangulo.jpg" alt="Galaxia 6">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia del Triángulo (M33)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 5×10<span class="superscript">10</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Antihorario.</li>
+                                <li><b>Diámetro:</b> 60 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000 a 2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 40 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_del_Tri%C3%A1ngulo"><button>Leer
+                                    más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-bode.jpg" alt="Galaxia 7">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia de Bode (M81)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Espiral.</li>
+                                <li><b>Masa:</b> 1×10<span class="superscript">12</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Antihorario.</li>
+                                <li><b>Diámetro:</b> 90 miles años luz.</li>
+                                <li><b>Grosor:</b> 3.000 a 5.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 250 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_de_Bode"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-antenas.jpg" alt="Galaxia 8">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia Antennae (NGC 4038/NGC 4039)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Galaxia en interacción.</li>
+                                <li><b>Masa:</b> 1.3×10<span class="superscript">11</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> No tiene giro definido.</li>
+                                <li><b>Diámetro:</b> 100 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000 a 3.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 500 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxias_Antennae"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="galaxias-img" src="./assets/img/galaxia-cigarro.jpg" alt="Galaxia 9">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Galaxia del Cigarro (M82)</h3>
+                            <ul>
+                                <li><b>Tipo Galaxia:</b>Irregular.</li>
+                                <li><b>Masa:</b> 1x10<span class="superscript">10</span> M<span
+                                        class="superscript">sol.</span></li>
+                                <li><b>Tipo Giro:</b> Sin giro, rotación en regiones centrales.</li>
+                                <li><b>Diámetro:</b> 37 miles años luz.</li>
+                                <li><b>Grosor:</b> 1.000 a 2.000 años luz.</li>
+                                <li><b>Número Estrellas:</b> 30 miles de millones.</li>
+                            </ul>
+                            <a href="https://es.wikipedia.org/wiki/Galaxia_del_Cigarro"><button>Leer más</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="asteroide">
-                <img class="img-asteroide" src="./assets/img/asteroide.png" alt="">
-                <img class="img-asteroide" src="./assets/img/asteroide.png" alt="">
-                <img class="img-asteroide" src="./assets/img/asteroide.png" alt="">
-                <img class="img-asteroide" src="./assets/img/asteroide.png" alt="">
-            </div>
+            <section class="elementos">
+                <img class="sol" src="./assets/img/sol.png" alt="Imagen Sol">
+                <img class="luna" src="./assets/img/luna.png" alt="Imagen Luna">
+                <img class="asteroide" src="./assets/img/asteroide.png" alt="">
+                
+            </section>
 
         </main>
 
         <footer>
-            <p>Todos los derechos reservados</p>
+            <h3>Contacto</h3>
+            <div class="iconos">
+                <div class="primeros-iconos">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+                </div>
+
+                <div class="email">
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <p>contacto@universo.com</p>
+                </div>
+            </div>
+            <p>Todos los derechos reservados ©</p>
         </footer>
     </div>
 
