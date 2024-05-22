@@ -12,6 +12,7 @@
     <!--Fin Link Font Awesome-->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/script.js">
     <link rel="shortcut icon" href="./assets/img/random-logo.png" type="image/x-icon">
 </head>
 
@@ -268,6 +269,26 @@
         </footer>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.flip-card');
+    
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('flip');
+                });
+            });
+        });
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            const iconoMovil = document.querySelector('.icono-movil');
+            const paginas = document.querySelector('.paginas');
+
+            iconoMovil.addEventListener('click', () => {
+                paginas.classList.toggle('mostrar');
+            });
+        });
+    </script>
 
 </body>
 
